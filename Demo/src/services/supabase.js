@@ -12,7 +12,7 @@ export const supabase = createClient(url, key, {
 });
 
 // Must exactly match the Bucket ID shown in Supabase → Storage → Buckets.
-export const STORAGE_BUCKET = (import.meta.env.VITE_SUPABASE_BUCKET || 'NOTECLOUD-FILES').trim();
+export const STORAGE_BUCKET = (import.meta.env.VITE_SUPABASE_BUCKET || 'notecloud-files').trim();
 
 function friendlyStorageError(error) {
   const message = error?.message || String(error || '');
