@@ -1,0 +1,3 @@
+import { Home,FileText,Image,User,Cloud } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
+export default function Sidebar(){return <aside className="sidebar"><div className="logo"><Cloud size={28}/><span>NoteCloud</span></div><nav className="sidebar-nav"><NavLink to="/"><Home size={20}/>Dashboard</NavLink><NavLink to="/notes"><FileText size={20}/>Notes</NavLink><NavLink to="/pictures"><Image size={20}/>Pictures</NavLink><NavLink to="/profile"><User size={20}/>Profile</NavLink></nav><div className="storage-info"><Cloud size={18}/><p>Cloud Sync Active</p><span>Firebase + Supabase</span></div></aside>}
